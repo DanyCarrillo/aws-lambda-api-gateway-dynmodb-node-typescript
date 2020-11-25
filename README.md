@@ -1,5 +1,6 @@
 # aws-lambda-api-gateway-dynmodb-node-typescript
 
+
 ## Descripción
 
 El presente proyecto tiene como finalidad crear servicios Rest usando las siguientes tecnologas de AWS:
@@ -32,7 +33,7 @@ Además, integra el servicio (starships)[https://swapi.py4e.com/api/starships] c
 
 ## Endpoints
 
-### [GET] Lista starShips
+### [GET] Lista starships con propiedades en español
 
   **PATH:** /api/starships
   
