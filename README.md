@@ -30,15 +30,21 @@ Además, integra el servicio (starships)[https://swapi.py4e.com/api/starships] c
 3. desplegar el proyecto `npm run deploy`
 
 
-## Endpoint
+## Endpoints
 
-### [GET] Lista starShips:
+### [GET] Lista starShips
 
-  **PATH: /api/starships**
+  **PATH:** /api/starships
+  
+#### Enpoint de Prueba
+
+```
+https://k15dczbh4m.execute-api.us-east-1.amazonaws.com/dev/api/starships
+```
   
 ### [POST] save: Inserta en dynamodb
 
-**PATH: /api/dynamo/starships**
+**PATH:** /api/dynamo/starships
 
 **Body:**
 
@@ -66,13 +72,35 @@ Además, integra el servicio (starships)[https://swapi.py4e.com/api/starships] c
 }
 ```
 
+#### Enpoint de Prueba
+
+```
+https://k15dczbh4m.execute-api.us-east-1.amazonaws.com/dev/api/dynamo/starships
+
+```
+
+
 ### [GET] find: Devuelve todos los registros de la tabla (dynamodb)
 
-**PATH: /api/dynamo/starships**
+**PATH:** /api/dynamo/starships
+
+#### Enpoint de Prueba
+
+```
+https://k15dczbh4m.execute-api.us-east-1.amazonaws.com/dev/api/dynamo/starships/all
+
+```
 
 ### [GET] findOne: Devuelve el registro del ID (dynamodb)
 
-**PATH: /api/dynamo/starships/{ID}**
+**PATH:** /api/dynamo/starships/{ID}
+
+#### Enpoint de Prueba
+
+```
+https://k15dczbh4m.execute-api.us-east-1.amazonaws.com/dev/api/dynamo/starships/{ID}
+
+```
 
 
 
