@@ -1,6 +1,6 @@
 # aws-lambda-api-gateway-dynmodb-node-typescript
 
-## DEscripcion
+## Descripción
 
 El presente proyecto tiene como finalidad crear servicios Rest usando las siguientes tecnologas de AWS:
 - API Gateway
@@ -36,11 +36,14 @@ Además, integra el servicio (starships)[https://swapi.py4e.com/api/starships] c
 
   **PATH: /api/starships**
   
-### [POST] Inserta en dynamodb:
+### [POST] save: Inserta en dynamodb
 
 **PATH: /api/dynamo/starships**
+
 **Body:**
-```{
+
+```
+{
     "nombre": "CR90 corvette",
     "modelo": "CR90 corvette",
     "fabricante": "Corellian Engineering Corporation",
@@ -60,8 +63,16 @@ Además, integra el servicio (starships)[https://swapi.py4e.com/api/starships] c
         "https://swapi.py4e.com/api/films/3/",
         "https://swapi.py4e.com/api/films/6/"
     ]
-}```
+}
+```
 
+### [GET] find: Devuelve todos los registros de la tabla (dynamodb)
+
+**PATH: /api/dynamo/starships**
+
+### [GET] findOne: Devuelve el registro del ID (dynamodb)
+
+**PATH: /api/dynamo/starships/{ID}**
 
 
 
